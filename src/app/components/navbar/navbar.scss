@@ -1,3 +1,22 @@
-.navbar-text{
-  color: white;
+navbar md-toolbar {
+  border-radius: 5px;
+
+  a.md-button.md-fab,
+  .md-button.md-fab {
+    background-color: #e9d799;
+  }
+
+  a.md-button.md-hue-1:not([disabled]):hover,
+  .md-button.md-hue-1:not([disabled]):hover {
+    background-color: rgba(158,158,158,0.4);
+  }
+
+  md-icon {
+      height: 36px;
+      width: 36px;
+  }
+
+  .navbar-text {
+    color: white;
+  }
 }
