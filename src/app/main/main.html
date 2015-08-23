@@ -1,70 +1,11 @@
-<div layout="vertical" layout-fill ng-controller="MainController as main">
-  <md-content layout-fill>
-    <header layout-fill>
-      <nav-bar/>
-    </header>
-
-    <section layout-fill layout-align="center center" flex layout="row">
-      <div layout="column">
-        <md-content class="md-padding" layout="column">
-          <p>
-            You may supply a direction of <code>left</code>, <code>up</code>, <code>down</code>, or
-            <code>right</code> through the <code>md-direction</code> attribute.
-          </p>
-          <div class="lock-size" layout="row" layout-align="center center">
-            <md-fab-speed-dial md-open="main.isOpen" md-direction="{{main.selectedDirection}}"
-                               ng-class="main.selectedMode">
-              <md-fab-trigger>
-                <md-button aria-label="menu" class="md-fab md-warn">a
-                </md-button>
-              </md-fab-trigger>
-              <md-fab-actions>
-                <md-button aria-label="twitter" class="md-fab md-raised md-mini">b
-                </md-button>
-                <md-button aria-label="facebook" class="md-fab md-raised md-mini">c
-                </md-button>
-                <md-button aria-label="Google Hangout" class="md-fab md-raised md-mini">d
-                </md-button>
-              </md-fab-actions>
-            </md-fab-speed-dial>
-          </div>
-          <div layout="row" layout-align="space-around">
-            <div layout="column">
-              <b>Direction</b>
-              <md-radio-group ng-model="main.selectedDirection">
-                <md-radio-button ng-repeat="direction in main.availableDirections"
-                                 ng-value="direction" class="text-capitalize">
-                  {{direction}}
-                </md-radio-button>
-              </md-radio-group>
-            </div>
-            <div layout="column">
-              <b>Open/Closed</b>
-              <md-radio-group ng-model="main.isOpen">
-                <md-radio-button ng-value="true">Open</md-radio-button>
-                <md-radio-button ng-value="false">Closed</md-radio-button>
-              </md-radio-group>
-            </div>
-            <div layout="column">
-              <b>Animation Modes</b>
-              <md-radio-group ng-model="main.selectedMode">
-                <md-radio-button ng-repeat="mode in main.availableModes" ng-value="mode">
-                  {{mode}}
-                </md-radio-button>
-              </md-radio-group>
-            </div>
-          </div>
-          <p class="note">
-            Note that you can also hover over the directive's area or tab through each button to open and
-            activate the speed dial menu.
-          </p>
-        </md-content>
-      </div>
-    </section>
-    <footer layout-fill>
-      <md-toolbar layout="row" layout-align="center center">
-        copyright
-      </md-toolbar>
-    </footer>
-  </md-content>
-</div>
+<section>
+  <ul id="sb-slider" class="sb-slider">
+    <li>
+      <img src="/assets/images/new/1.jpg" alt="image1" />
+    </li>
+    <li>
+      <img src="/assets/images/new/2.jpg" alt="image2" />
+    </li>
+  </ul>
+  <div id="shadow" class="shadow"></div>
+</section>
